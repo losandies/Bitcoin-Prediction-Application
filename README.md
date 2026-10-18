@@ -4,8 +4,6 @@ A machine learning app that predicts Bitcoin’s next-day price direction using 
 
 ## Demo
 
-https://github.com/user-attachments/assets/5f05507f-fed8-4034-a944-afcd546311f8
-
 [Watch the demo](https://github.com/user-attachments/assets/5f05507f-fed8-4034-a944-afcd546311f8)
 
 ## Features
@@ -20,12 +18,12 @@ https://github.com/user-attachments/assets/5f05507f-fed8-4034-a944-afcd546311f8
 
 The model uses four features derived from daily market data:
 
-| Feature | Description |
-| --- | --- |
-| Daily return | Percentage change in closing price from the previous day |
-| Daily range | Difference between the high and low, divided by the close |
-| Close vs. 7-day average | Closing price relative to its 7-day moving average |
-| 7-day volatility | Rolling standard deviation of daily returns |
+| Feature                 | Description                                               |
+| ----------------------- | --------------------------------------------------------- |
+| Daily return            | Percentage change in closing price from the previous day  |
+| Daily range             | Difference between the high and low, divided by the close |
+| Close vs. 7-day average | Closing price relative to its 7-day moving average        |
+| 7-day volatility        | Rolling standard deviation of daily returns               |
 
 The target is **UP** when the following day closes higher, and **DOWN/UNCHANGED** otherwise. Data is split chronologically: the oldest 80% of usable rows train the model, and the newest 20% evaluate it. A majority-class baseline provides a reference for interpreting accuracy.
 
